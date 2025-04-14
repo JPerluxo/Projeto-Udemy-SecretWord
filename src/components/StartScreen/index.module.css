@@ -1,0 +1,25 @@
+.startScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.startScreen h2 {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #07393c;
+}
+
+.startScreen button {
+    --bs-btn-color: #2c666e;
+    --bs-btn-border-color: #2c666e;
+    --bs-btn-hover-bg: #2c666e;
+    --bs-btn-hover-border-color: #2c666e;
+    --bs-btn-focus-shadow-rgb: 44, 102, 110;
+    --bs-btn-active-bg: #2c666e;
+    --bs-btn-active-border-color: #2c666e;
+    --bs-btn-disabled-color: #2c666e;
+    --bs-btn-disabled-border-color: #2c666e;
+}
