@@ -1,25 +1,25 @@
+@import '../../variables.css';
+
 .startScreen {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5vh;
+    gap: 3vh;
 }
 
-.startScreen h2 {
-    font-size: xx-large;
-    font-weight: bold;
-    color: #07393c;
+.startScreen img {
+    width: 65vh;
 }
 
 .startScreen button {
-    --bs-btn-color: #2c666e;
-    --bs-btn-border-color: #2c666e;
-    --bs-btn-hover-bg: #2c666e;
-    --bs-btn-hover-border-color: #2c666e;
-    --bs-btn-focus-shadow-rgb: 44, 102, 110;
-    --bs-btn-active-bg: #2c666e;
-    --bs-btn-active-border-color: #2c666e;
-    --bs-btn-disabled-color: #2c666e;
-    --bs-btn-disabled-border-color: #2c666e;
+    --bs-btn-color: var(--Color-Middle);
+    --bs-btn-border-color: var(--Color-Middle);
+    --bs-btn-hover-bg: var(--Color-Middle);
+    --bs-btn-hover-border-color: var(--Color-Middle);
+    --bs-btn-focus-shadow-rgb: var(--Color-Middle-rgb);
+    --bs-btn-active-bg: var(--Color-Middle);
+    --bs-btn-active-border-color: var(--Color-Middle);
+    --bs-btn-disabled-color: var(--Color-Middle);
+    --bs-btn-disabled-border-color: var(--Color-Middle);
 }

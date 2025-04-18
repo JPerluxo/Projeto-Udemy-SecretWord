@@ -1,0 +1,35 @@
+@import '../../variables.css';
+
+.gameOver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 2vh 0;
+}
+
+.gameOver img {
+    width: 50vh;
+}
+
+.gameOver h2 {
+    font-size: x-large;
+}
+
+.gameOver h2 span {
+    font-weight: bold;
+    color: var(--Color-Middle);
+}
+
+.gameOver button {
+    --bs-btn-bg: var(--Color-Middle);
+    --bs-btn-border-color: var(--Color-Middle);
+    --bs-btn-hover-bg: var(--Color-Light);
+    --bs-btn-hover-border-color: var(--Color-Light);
+    --bs-btn-focus-shadow-rgb: var(--Color-Middle-rgb);
+    --bs-btn-active-bg: var(--Color-Light);
+    --bs-btn-active-border-color: var(--Color-Dark);
+    --bs-btn-disabled-bg: var(--Color-Middle);
+    --bs-btn-disabled-border-color: var(--Color-Middle);
+}

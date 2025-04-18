@@ -1,0 +1,11 @@
+:root {
+    --Color-White: #f0edee;
+    --Color-Black: #0a090c;
+    --Color-Darker: #31121A;
+    --Color-Dark: #581b29;
+    --Color-Middle: #7e2337;
+    --Color-Middle-rgb: 126, 35, 55;
+    --Color-Middle-rgba: rgba(126, 35, 55, 0.243);
+    --Color-Light: #a52c46;
+    --Color-Lighter: #edb6c1;
+}
