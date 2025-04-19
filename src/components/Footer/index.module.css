@@ -1,0 +1,11 @@
+.footer {
+    position: absolute;
+    top: 90%;
+    font-size: small;
+    color: #939dae;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #939dae;
+}

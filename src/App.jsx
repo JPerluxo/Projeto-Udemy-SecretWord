@@ -5,6 +5,7 @@ import { wordsList } from './words';
 import StartScreen from './components/StartScreen';
 import Game from './components/Game';
 import GameOver from './components/GameOver';
+import Footer from './components/Footer';
 
 const STAGES = [
   { id: 1, name:"start" },
@@ -91,11 +92,14 @@ function App() {
   };
 
   return (
-    <div className="appBox">
-      {gamestage === "start" && <StartScreen startGame={startGame}/>}
-      {gamestage === "game" && <Game verifyLetter={verifyLetter} pickedWord={pickedWord} pickedCategory={pickedCategory} letters={letters} guessedLetters={guessedLetters} wrongLetters={wrongLetters} guesses={guesses} score={score}/>}
-      {gamestage === "end" && <GameOver retry={retry} score={score}/>}
-    </div>
+    <>
+      <div className="appBox">
+        {gamestage === "start" && <StartScreen startGame={startGame}/>}
+        {gamestage === "game" && <Game verifyLetter={verifyLetter} pickedWord={pickedWord} pickedCategory={pickedCategory} letters={letters} guessedLetters={guessedLetters} wrongLetters={wrongLetters} guesses={guesses} score={score}/>}
+        {gamestage === "end" && <GameOver retry={retry} score={score}/>}
+      </div>
+      <Footer/>
+    </>
   );
 }
 
