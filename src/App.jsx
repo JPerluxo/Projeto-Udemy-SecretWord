@@ -45,6 +45,7 @@ function App() {
   }, [pickWordAndCategory]);
 
   const verifyLetter = (letter) => {
+    letter = letter.toLowerCase();
     if (!/^[a-záéíóúãõâêîôûç]$/i.test(letter)) return;
     if(guessedLetters.includes(letter) || wrongLetters.includes(letter)) return;
     if(letters.includes(letter)) {
@@ -77,6 +78,7 @@ function App() {
 
     if(guessedLetters.length === uniqueLetters.length && gamestage === STAGES[1].name) {
       setScore((actualScore) => actualScore += 100);
+      setGuesses(GUESSES_NUM);
       startGame();
     }
   }, [guessedLetters, letters, gamestage, startGame])
